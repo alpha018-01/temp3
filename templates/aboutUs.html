@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Tangerine:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyTube</title>
+  </head>
+  <body>
+    <div id="nav">
+      <img src="static\images\youtube4.svg" alt="youtube" srcset="" />
+      <p onclick="index()">Home</p>
+      <p id="curr">About us</p>
+    </div>
+
+    <center>
+      <div id="body">
+        <div class="card">
+          <h1>Who We Are :</h1>
+          <p>
+            We are a dedicated team of four individuals working together on our
+            sixth-semester project :
+          </p>
+          <ul style="list-style: none; padding: 0">
+            <li><b>Md Salhe Allsabah</b></li>
+            <li><b>Shubham Mishra</b></li>
+            <li><b>Sharib Ejaz</b></li>
+            <li><b>Syam Babu Mahto</b></li>
+          </ul>
+          <p>
+            As a small group, we bring diverse perspectives, skills, and
+            enthusiasm to the table, collaborating effectively to bring our
+            ideas to life. This project is a reflection of our hard work and
+            determination, showcasing our ability to learn, grow, and achieve as
+            a cohesive unit. Together, we aim to create something impactful and
+            memorable, demonstrating the strength of teamwork and innovation.
+          </p>
+        </div>
+
+        <br />
+
+        <div class="card">
+          <h1>What does this project do :</h1>
+
+          <p>
+            This project is designed to streamline the process of converting
+            <b>YouTube videos into MP4 format</b> , enabling users to easily
+            download them <span>for sharing and archiving purposes</span>. By offering a
+            simple and efficient solution, it ensures that videos can be
+            preserved offline, shared across various platforms, or stored for
+            future use without relying on an internet connection. With its
+            user-friendly approach, this project aims to enhance accessibility
+            and convenience, making video management effortless and versatile.
+          </p>
+        </div>
+      </div>
+    </center>
+
+    <div id="foot">
+      <p>Engineered With</p>
+      <span>&hearts;</span>
+      <br />
+      <p>At GP Dhanbad</p>
+    </div>
+
+    <script>
+      function index()
+    {
+      const currentURL = window.location.href;
+      const urlObject = new URL(currentURL);
+      const port = urlObject.port;
+      const homeRoute = port 
+        ? `${urlObject.protocol}//${urlObject.hostname}:${port}`
+        : `${urlObject.protocol}//${urlObject.hostname}`;
+
+      window.location.href = homeRoute
+      }
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles/style.css') }}"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyTube</title>
+  </head>
+  <body>
+    <div id="nav">
+      <img src="static\images\youtube4.svg" alt="youtube" srcset="" />
+      <p id="curr">Home</p>
+      <p onclick="aboutUs()">About us</p>
+    </div>
+
+    <center>
+      <div id="body">
+        <input
+          type="text"
+          name="url"
+          id="url"
+          placeholder="Enter URL Here..."
+        />
+        <br /><br />
+        <input type="button" value="Get MP4" id="fire" onclick="getVideo()" />
+        <input type="button" value="Get MP3" id="fire" onclick="getAudio()" />
+      </div>
+    </center>
+
+    <div id="foot">
+      <p>Engineered With</p>
+      <span>&hearts;</span>
+      <br />
+      <p>At GP Dhanbad</p>
+    </div>
+
+    <script>
+      function getVideo() {
+        const inputValue = document.getElementById("url");
+        const prefix = window.location.href + 'video/';
+        const URL = prefix + inputValue.value;
+        window.open(URL)
+
+        inputValue.value = "";
+      }
+
+      function getAudio() {
+        const inputValue = document.getElementById("url");
+        const prefix = window.location.href + 'audio/';
+        const URL = prefix + inputValue.value;
+        window.open(URL)
+
+        inputValue.value = "";
+      }
+
+      function aboutUs()
+      {
+        const demand = "about";
+        const currentURL = window.location.href;
+        const URL = currentURL+demand ;
+        window.location.href = URL;
+      }
+
+
+    </script>
+  </body>
+</html>

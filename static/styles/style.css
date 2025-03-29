@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+#nav
+{
+    height:50px;
+    width: 100vw;
+    padding: 5px;
+    background-color: #0b0b0b;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display:flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#nav>img
+{
+    width: 50px;
+    margin-top: 30px;
+    font-family: "Nunito Sans", sans-serif;
+    color: whitesmoke;
+    vertical-align: bottom;
+    user-select: none;
+}
+
+#nav>p {
+    font-size: 15px;
+    font-family: "Nunito Sans", sans-serif;
+    color: whitesmoke;
+}
+
+#curr{
+    font-size: 15px;
+    font-family: "Nunito Sans", sans-serif;
+    color: whitesmoke;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-underline-offset: 4px;
+}
+
+#nav>p:hover
+{
+    color: red;
+}
+
+#foot {
+    height: auto;
+    width: 100vw;
+    padding: 5px;
+    background-color: rgb(11, 11, 11);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#foot>p {
+    font-size: 15px;
+    font-family: "Nunito Sans", sans-serif;
+    color: whitesmoke;
+}
+
+#foot>span {
+    font-size: 15px;
+    font-family: "Nunito Sans", sans-serif;
+    color: rgb(217, 35, 35);
+}
+
+#body {
+    height: auto;
+    width: 80vw;
+    min-height: 65vh;
+    padding: 5px;
+    background-color: #0b0b0b;
+    background: radial-gradient(circle at 90% 10%, #acabab, #d6d6d6);    border-radius: 10px;
+    align-items: center;
+    border: 1px solid black;
+    margin-top: 70px;
+    padding: 20px;
+    margin-bottom: 90px;
+    justify-content: space-evenly;
+}
+
+#body>h1 {
+    font-size: 30px;
+    font-family: "Nunito Sans", sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+#body>p {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 21px;
+    font-family: "Nunito Sans", sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: left;
+}
+
+.card
+{
+    width:70vw;
+    background-color: rgb(216, 216, 216);
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.card > h1
+{
+    font-size: 30px;
+    font-family: "Nunito Sans", sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.card>p{
+    
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 18px;
+    font-family: "Nunito Sans", sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: left;
+}
+
+.card>ul {
+
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 18px;
+    font-family: "Nunito Sans", sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: left;
+}
+
+
+
+#url{
+    font-size: 20px;
+    width: 70vw;
+    padding: 2px;
+    text-align: center;
+    border-radius: 10px;
+    outline: none;
+    border: 0px solid black;
+    font-family: "Nunito Sans", sans-serif;
+    color: rgb(16, 16, 16);
+    top : 30vh;
+    position: relative;
+    font-weight: 600;
+}
+
+#body>input:focus
+{
+    border: 1px solid black;
+}
+
+.card>p>span {
+        font-family: "Tangerine", cursive;
+        font-weight: 1000;
+        font-style: normal;
+}
+
+#fire
+{
+    font-size: 15px;
+    background-color: black;
+    width: 30vw;
+    padding: 2px;
+    text-align: center;
+    border-radius: 10px;
+    outline: none;
+    border: 0px solid rgb(164, 164, 164);
+    font-family: "Nunito Sans", sans-serif;
+    color: rgb(237, 237, 237);
+    top: 30vh;
+    position: relative;
+    font-weight: 600;
+}
+
