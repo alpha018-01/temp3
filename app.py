@@ -35,6 +35,6 @@ def audio(url):
     audio = getAudio(url)
     return send_file(audio)
 
-if __name__ == '__main__':
-    app.url_map.strict_slashes = False
-    app.run(debug=True)
+# if __name__ == '__main__':
+#     app.url_map.strict_slashes = False
+#     app.run(debug=True)
